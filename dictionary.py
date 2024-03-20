@@ -1,13 +1,16 @@
 class Dictionary:
     def __init__(self):
-        pass
+        self._dict = []
 
     def loadDictionary(self,path):
-        pass
+        f=open(path, "r")
+        righe=f.readlines()
+        for riga in righe:
+            self._dict.append(riga)
 
     def printAll(self):
-        pass
-
+        for p in self._dict:
+            print(p)
 
     @property
     def dict(self):

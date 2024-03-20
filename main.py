@@ -6,7 +6,10 @@ while(True):
     sc.printMenu()
 
     txtIn = input()
-    # Add input control here!
+    #se l'input è diverso da un numero o maggiore di 4 blocca il programma
+    if not txtIn.isnumeric() or int(txtIn) >4:
+        print("Mi dispiace elemento non valido")
+        break
 
     if int(txtIn) == 1:
         print("Inserisci la tua frase in Italiano\n")
