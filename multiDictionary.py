@@ -1,7 +1,10 @@
 import dictionary as d
 import richWord as rw
 
-
+"""
+Questa classe ha il compito di gestire l'accesso ai vari dizionari
+salvati come elementi di tipo Dictionary
+"""
 class MultiDictionary:
 
 
